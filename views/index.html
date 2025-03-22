@@ -1,0 +1,16 @@
+{{ block "index" . }}
+<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script src="js/script.js"></script>
+	<script src="https://unpkg.com/htmx.org/dist/htmx.js"></script>
+</head>
+<body>
+	Count {{ .Count }}
+	<button hx-post="/count">Count</button>
+</body>
+</html>
+{{ end }}
